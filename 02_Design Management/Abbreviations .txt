@@ -1,1 +1,13 @@
+==========File-Naming==========
 FL == Forklift
+A == Assembly
+P == Part
+
+
+
+==========Assemblies==========
+
+
+
+==========Parts==========
+Ba == Base (Of Forklift)
