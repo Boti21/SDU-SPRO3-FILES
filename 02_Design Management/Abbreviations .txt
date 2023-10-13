@@ -11,3 +11,8 @@ P == Part
 
 ==========Parts==========
 Ba == Base (Of Forklift)
+FO == Fork of Forklift
+LSc == Lead Screw for mast
+SmR == Smooth Rod for mast
+MTG == Mast Top Guide
+MM == Mast Motor
