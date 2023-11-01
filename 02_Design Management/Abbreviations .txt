@@ -16,3 +16,5 @@ LSc == Lead Screw for mast
 SmR == Smooth Rod for mast
 MTG == Mast Top Guide
 MM == Mast Motor
+MoM == Movement Motor
+MoMH == Movement Motor Holder - if anyone has a better name please change the name
