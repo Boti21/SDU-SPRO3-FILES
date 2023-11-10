@@ -1,0 +1,22 @@
+\documentclass{article}
+
+\title{IR Sensor array}
+\author{Group 15}
+\begin{document}
+
+\section{Physical}
+
+    The infrared sensor array works by the following principles:
+    A phototransistor changes its resistance based on the amount of IR light it detects.
+    The change in resistance manifests as a voltage between the corresponging "D" pin and ground.
+    A togglable IR led can increase the amount of IR light present in the area. By pulling the IR
+    pin high the led will be on.
+
+\section{Programming}
+
+    To utilize the IR sensor the program should use an analog to digital converter (ADC) to measure
+    each voltage on each "D" pin. By analyzing the values of these, the program can collect information
+    on the IR reflectance of the materials the sensor is facing.
+
+\end{document}
+
