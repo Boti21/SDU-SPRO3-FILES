@@ -1,4 +1,4 @@
-/* Some commands and code
+/* Some commands and code from https://docs.espressif.com/projects/esp-idf/en/v4.3/esp32/api-reference/system/freertos.html#:~:text=vTaskDelay()%20specifies%20a%20time,after%20vTaskDelay()%20is%20called.
 
 If you want to print the usual printf() will not work.
 Instead create a variable inside your task (only needs to be done once per task):
