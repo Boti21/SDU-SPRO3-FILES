@@ -12,4 +12,26 @@ If a delay is needed use:
 vTaskDelay(Number_of_millisecond / portTICK_PERIOD_MS);
 This is not a good solution for periodic tasks, consult the documentation to learn more.
 
+
+Tasks
+
+What is a task?
+A task (called a thread in most other operating systems) can be thought of as a program itself. It is a just some code that will get executed by the CPU.
+Since there are more tasks one cannot occupy the CPU forever. This is where task scheduling comes in.
+Imagine an ice cream shop where the shopkeep is the CPU serving the guests who are the customers and the kind of ice cream they order is the code of the task.
+The customers stand in a queue and wait to be served (thread is being executed), after that they can sit down and eat their ice cream (not ready state).
+After they finish their ice cream they rejoin the queue at the end (ready state).
+
+Why is this good?
+Many things, too many to list. In our case it will potentially make writing the code a whole lot easier than only using a single thread (a single program,
+remember threads can be though of as separate programs more or less).
+
+Creating a task:
+
+Create a handle in the task that creates out task (a handle is sort of an id number for the operating system)
+
+TaskHandle_t xHandle = NULL;
+type^        name^     ^init value
+
+
 */
