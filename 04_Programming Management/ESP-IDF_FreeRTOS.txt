@@ -33,12 +33,14 @@ Create a handle in the task that creates our task (a handle is sort of an id num
 TaskHandle_t xHandle = NULL;
 type^        name^     ^init value
 
- xTaskCreate(vTaskCode, // The name of the task body, it is written like a function, example after this
+xTaskCreate(vTaskCode, // The name of the task body, it is written like a function, example after this
             "NAME", // The task can have a name, in fact please name them whenever they are created, because when printing the name of the task shows up, making debugging easier
             STACK_SIZE, // Size of the stack (static memory) that is reserved for the task
             &ucParameterToPass, // Argument that can be passed to the task when created, just like a function, can only be a pointer
             tskIDLE_PRIORITY, // The priority that the task should run at. In our case this likely won't matter much, but a default value can be 2 for example (maybe 1 idk)
             &xHandle); // This is where you put the handle previously created
+
+DON'T DO THIS FOR NOW -- configASSERT(xHandle); // Call this after creating a task, checks if the handle is NULL
         
 Code example:
 
@@ -57,6 +59,7 @@ void vTaskADC( void * pvParameters ) {
         // Task code goes here.
     }
 }
+
 
 
 */
