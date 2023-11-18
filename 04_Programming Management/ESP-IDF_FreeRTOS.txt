@@ -49,7 +49,7 @@ Code example:
 static uint8_t ucParameterToPass = 6;
 TaskHandle_t xADCHandle = NULL;
 
-xTaskCreate(vTaskADC, "ADC", STACK_SIZE, &ucParameterToPass, 2, &xADCHandle);
+xTaskCreate(vTaskADC, "ADC", CUSTOM_STACK_SIZE, &ucParameterToPass, 2, &xADCHandle);
 ...
 }
 
