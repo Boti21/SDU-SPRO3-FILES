@@ -16,8 +16,8 @@ flowchart TB
     is down if the forks point upwards on the chart.
 
     These variables should be global.
-
-    Target point should be a pallet coordinate.
+    -->
+    AA[Get Target Point - should be a pallet coordinate or Output]
 
     -->  B[Get point to go to:Xt,Yt
     Calculate:
@@ -35,7 +35,7 @@ flowchart TB
     C -- if((Xc >= 4) && (Xt <= 3) --> F[We are in hallway 2
      and need to go to hallway 1] --> H[Go to transportation layer.]
 
-    H -- if(Xc == 1,3,4 or 5) --> J[We are on a pallet space.] --> JJ[Drive one forward] -- because we will always face with the forks into a pallet space -->K 
+    H -- if(Xc == 1,3,4 or 5 && Yc != 1) --> J[We are on a pallet space.] --> JJ[Drive one forward] -- because we will always face with the forks into a pallet space -->K 
     H -- else --> K[We are in the hallway] -- if(Yc != 1) --> L[change Oc to down] 
     K -- if(Yc == 1) --> O[We are on the transportation layer]
     L --> T[drive from Yc to Y==1] --> O
@@ -50,8 +50,9 @@ flowchart TB
 
     W -- if if(Xt == 3 or 6) --> XX[we want o pick up the pallet: 
     change orientation from Oc to left
-    - thus, the fork is facing right] --> Y
-    C -- else --> G[We are in the right hallway.] 
+    - thus, the fork is facing right] --> Y --> AA
+    C -- else --> G[We are in the right hallway.] -- if(Xc != 2 or 5) --> WW[drive one forward]--> W
+    G -- else --> W
 
     Func[
     Functions needed:
@@ -61,6 +62,8 @@ flowchart TB
     Go from Xc to X-point: drive from, to
     Go to Yc to Y point
     drive one intersection backwards
+
+    The drive from to functions should also handle the direction change: Ex go from Xc=1 to X=3 the orientation should be changed to right
     ]
     Var[
     Variables needed:
