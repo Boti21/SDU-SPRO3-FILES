@@ -39,8 +39,8 @@ flowchart TB
     H -- else --> K[We are in the hallway] -- if(Yc != 1) --> L[change Oc to down] 
     K -- if(Yc == 1) --> O[We are on the transportation layer]
     L --> T[drive from Yc to Y==1] --> O
-    O -- if(Xg > 0) --> P[change Oc to left] --> S[go from Xc to 2] --> R[We are in the right hallway]
-    O -- if(Xg < 0) --> Q[change Oc to right] --> U[go from Xc to 5] --> R
+    O -- if(Xg > 0) --> P[change Oc to right] --> S[go from Xc to 2] --> R[We are in the right hallway]
+    O -- if(Xg < 0) --> Q[change Oc to left] --> U[go from Xc to 5] --> R
 
     R --> V[change Oc to up] --> W[go from Yc to Yt]
     -- if(Xt == 1 or 4) 
