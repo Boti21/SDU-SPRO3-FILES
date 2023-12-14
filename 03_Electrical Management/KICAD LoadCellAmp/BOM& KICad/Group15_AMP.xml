@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\felih\OneDrive\Uni\Mechatronics_Semester_Project_3\SDU-SPRO3-FILES\03_Electrical Management\KICAD LoadCellAmp\BOM&amp; KICad\Group15_AMP.kicad_sch</source>
+    <date>12/13/2023 3:41:57 PM</date>
+    <tool>Eeschema 7.0.9</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>SCH: Differential Amplifier Circuit for Loadcells</title>
+        <company>Group 15</company>
+        <rev>00</rev>
+        <date>2023-12-09</date>
+        <source>Group15_AMP.kicad_sch</source>
+        <comment number="1" value="This circuit will apllify the differential in potential from Wheatstone - bridge"/>
+        <comment number="2" value="It has 3.3V input "/>
+        <comment number="3" value="v+ , v- input from wheatstone bridge"/>
+        <comment number="4" value="3.3V output for Wheatstone-bridge"/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>0.1u</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Group15_AMP.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1dbed7a9-3f17-4dd8-8f3a-a154d0657e70</tstamps>
+    </comp>
+    <comp ref="Ina122">
+      <value>~</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <libsource lib="New_Library" part="INA122P" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Group15_AMP.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>29aab502-a987-416c-b5e0-b3c351bd8166</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Differential input</value>
+      <footprint>TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Group15_AMP.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7ac06c19-e6d3-4e9a-ba9d-10054935389e</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>3.3V Input</value>
+      <footprint>Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Group15_AMP.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>20db88fc-2b33-4894-9eb6-7e2401f494b2</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>3.3V Output</value>
+      <footprint>TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Group15_AMP.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2afaafd3-a063-45e0-9e79-e1e74bb2fb5e</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Output</value>
+      <footprint>Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Group15_AMP.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c89e0509-1e0d-4b9d-808e-481d57c1e277</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>105k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Group15_AMP.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e13a7031-61bc-4921-95bb-06d92522696d</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>6.8k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Group15_AMP.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>86cc38b1-69d2-43f8-96b6-3b7bd0829057</tstamps>
+    </comp>
+    <comp ref="RG1">
+      <value>270</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Group15_AMP.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d145419c-75da-4e5f-9aa5-eff28b205aaf</tstamps>
+    </comp>
+    <comp ref="RG2">
+      <value>56</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Group15_AMP.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>566cdc6b-7a28-465c-9c4b-94d86d1fb31f</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Screw_Terminal_01x02">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="New_Library" part="INA122P">
+      <fields>
+        <field name="Reference">Ina122p1</field>
+        <field name="Value">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RG" type="bidirectional"/>
+        <pin num="2" name="Vin-" type="input"/>
+        <pin num="3" name="Vin+" type="input"/>
+        <pin num="4" name="V-" type="power_out"/>
+        <pin num="5" name="Ref" type="input"/>
+        <pin num="6" name="Vo" type="output"/>
+        <pin num="7" name="V+" type="input"/>
+        <pin num="8" name="RG" type="bidirectional"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/Vin+">
+      <node ref="Ina122" pin="3" pinfunction="Vin+" pintype="input"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="2" name="/Vin-">
+      <node ref="Ina122" pin="2" pinfunction="Vin-" pintype="input"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="3" name="/Vo">
+      <node ref="Ina122" pin="6" pinfunction="Vo" pintype="output"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="4" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="Ina122" pin="4" pinfunction="V-" pintype="power_out"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="IN3.3">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="Ina122" pin="7" pinfunction="V+" pintype="input"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(Ina122-RG-Pad1)">
+      <node ref="Ina122" pin="1" pinfunction="RG" pintype="bidirectional"/>
+      <node ref="RG1" pin="2" pintype="passive"/>
+    </net>
+    <net code="7" name="Net-(Ina122-RG-Pad8)">
+      <node ref="Ina122" pin="8" pinfunction="RG" pintype="bidirectional"/>
+      <node ref="RG2" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(Ina122-Ref)">
+      <node ref="Ina122" pin="5" pinfunction="Ref" pintype="input"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(RG1-Pad1)">
+      <node ref="RG1" pin="1" pintype="passive"/>
+      <node ref="RG2" pin="2" pintype="passive"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,19 @@
+* C:\Users\felih\OneDrive\Uni\Mechatronics_Semester_Project_3\SDU-SPRO3-FILES\03_Electrical Management\LoadCellAmp.asc
+V1 VS 0 3.3
+R1 VS V+ 999
+R2 V+ 0 999
+R3 V+ 0 999
+R4 VS V+ 999
+R5 VS Ref 100k
+R6 Ref 0 3125
+RG N001 N003 656
+XU1 Vin+ N001 VS 0 Vout OP747
+XU2 Vin- N003 VS 0 N002 OP747
+R8 Vout N001 100k
+R9 N002 N001 25k
+R10 N002 N003 25k
+R11 Ref N003 100k
+.op
+.lib ADI.lib
+.backanno
+.end
